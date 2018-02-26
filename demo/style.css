@@ -1,0 +1,56 @@
+body {
+    font-family: Tahoma;
+    font-size: 10pt;
+    line-height: 170%;
+    padding: 0 10pt;
+}
+
+nav {
+    background: gray;
+    color: white;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 150px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: saddlebrown;
+}
+
+header {
+    padding-left: 200px;
+}
+
+article {
+    padding-left: 200px;
+}
+
+footer {
+    padding-left: 200px;
+}
+
+@media screen and (max-width: 800px) {
+    nav {
+        width: 0;
+    }
+    header {
+        padding-left: 0px;
+    }
+
+    article {
+        padding-left: 0px;
+    }
+
+    footer {
+        padding-left: 0px;
+    }
+}

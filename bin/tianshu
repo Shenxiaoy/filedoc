@@ -1,0 +1,33 @@
+#! /usr/bin/env node
+
+require('shelljs/global')
+var path = require('path')
+var program = require('commander'),
+	tianshu = require('../lib/main'),
+	version = require('../package.json').version;
+var rootPath = process.cwd()
+var otherOrder = true
+
+program
+  .command('demo')
+  .action(function() {
+    cp('-R', path.join(__dirname, '../demo/section'), rootPath)
+    cp('-R', path.join(__dirname, '../demo/index.html'), rootPath)
+    cp('-R', path.join(__dirname, '../demo/index.tpl'), rootPath)
+    cp('-R', path.join(__dirname, '../demo/style.css'), rootPath)
+    otherOrder = false
+  })
+
+program
+	.version(version)
+	.usage('<pathname>')
+	.parse(process.argv);
+
+if(!otherOrder) {
+  throw 'creat demo'
+}
+if (program.args.length === 0) {
+	program.help();
+} else {
+	tianshu(program.args[0]);
+}
