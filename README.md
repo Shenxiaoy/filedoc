@@ -24,3 +24,8 @@ markdown单页文档
 在生成的目录中，section中是添加的文档章节，index.tpl 是模板，需要把section中的各个markdown文件按照顺序格式在index.tpl中添加，最后使用
 `filedoc index.tpl` 进行编译，会在本目录下生成html文件
 
+————————————————————————————————————————————————————————————————
+> filedoc tree index.tpl
+
+编辑indexx.tpl模板，h4以下标签不在生成左侧目录
+

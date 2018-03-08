@@ -12,7 +12,7 @@
 		"url": "git://github.com/nqdeng/filedoc.git"
 	},
 	"author": "shenxiaoyu",
-	"version": "1.0.0",
+	"version": "2.0.1",
 	"dependencies": {
 		"commander": "1.0.x",
 		"marked": "0.2.x",
