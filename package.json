@@ -12,7 +12,7 @@
 		"url": "https://github.com/Shenxiaoy/filedoc.git"
 	},
 	"author": "shenxiaoyu",
-	"version": "3.0.1",
+	"version": "2.1.1",
 	"dependencies": {
 		"commander": "1.0.x",
 		"marked": "0.2.x",
