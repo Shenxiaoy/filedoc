@@ -23,6 +23,7 @@
 <footer>
 <x-markdown src="section/99_footer.md" />
 </footer>
+<script type="text/javascript" src="nav.js"></script>
 </body>
 
 </html>

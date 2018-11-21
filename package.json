@@ -5,7 +5,7 @@
 		"markdown",
 		"documentation",
 		"shenxiaoyu",
-		"tianshu"
+		"filedoc"
 	],
 	"repository": {
 		"type": "git",
@@ -20,6 +20,6 @@
 	},
 	"main": "lib/main.js",
 	"bin": {
-		"filedoc": "./bin/tianshu"
+		"filedoc": "./bin/filedoc"
 	}
 }

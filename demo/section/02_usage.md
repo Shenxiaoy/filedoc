@@ -4,6 +4,6 @@
 
 准备好所有文件后，使用以下命令将模板文件编译为HTML文件。
 
->	tianshu index.tpl
+>	filedoc index.tpl
 
 如果希望生成的`index.html`好看一些，可以在`index.tpl`里写一些CSS。

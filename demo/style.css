@@ -6,7 +6,7 @@ body {
 }
 
 nav {
-    background: gray;
+    /*background: #777676;*/
     color: white;
     overflow-x: hidden;
     overflow-y: auto;
@@ -15,6 +15,9 @@ nav {
     left: 0;
     bottom: 0;
     width: 150px;
+    padding: 10px;
+    border-right: 2px solid #777676;
+    margin-top: 5px;
 }
 
 nav a {
@@ -37,6 +40,61 @@ article {
 footer {
     padding-left: 200px;
 }
+
+/*.level3::before {*/
+    /*content: '\F103';*/
+    /*font-family: icons !important;*/
+    /*font-style: normal;*/
+    /*font-weight: normal !important;*/
+/*}*/
+
+
+body, ul, li {
+    border-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.setDeg {
+    -webkit-transform: rotate(90deg)
+}
+.delDeg {
+    -webkit-transform: rotate(0deg)
+}
+.arrow-svg {
+    display: inline-block;
+    width: 0.6em;
+    height: 0.6em;
+    transition: all 200ms;
+    margin-right: 0.2em;
+    cursor: pointer;
+    font-weight: bold;
+}
+.second-ul {
+    display: none;
+    margin-left: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-left: 1px dashed #777676;
+}
+.second-ul li {
+    position: relative;
+}
+.second-ul li::before {
+    content: '';
+    width: 0.8em;
+    border-bottom: 1px dashed #777676;
+    position: absolute;
+    left: 0;
+    top: 60%;
+}
+li a {
+    display: inline-block;
+    margin-left: 1em;
+    font-size: 0.9em;
+}
+
 
 @media screen and (max-width: 800px) {
     nav {

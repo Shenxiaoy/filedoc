@@ -3,7 +3,7 @@
 require('shelljs/global')
 var path = require('path')
 var program = require('commander'),
-	tianshu = require('../lib/main'),
+	filedoc = require('../lib/main'),
   treedoc = require('../lib/treedoc'),
 	version = require('../package.json').version;
 var rootPath = process.cwd()
@@ -16,6 +16,8 @@ program
     cp('-R', path.join(__dirname, '../demo/index.html'), rootPath)
     cp('-R', path.join(__dirname, '../demo/index.tpl'), rootPath)
     cp('-R', path.join(__dirname, '../demo/style.css'), rootPath)
+    cp('-R', path.join(__dirname, '../demo/nav.js'), rootPath)
+    cp('-R', path.join(__dirname, '../demo/qianblue.svg'), rootPath)
     otherOrder = false
   })
 
@@ -38,5 +40,5 @@ if(!otherOrder) {
 if (program.args.length === 0) {
 	program.help();
 } else {
-	tianshu(program.args[0]);
+	filedoc(program.args[0]);
 }
