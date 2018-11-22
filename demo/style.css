@@ -5,6 +5,14 @@ body {
     padding: 0 10pt;
 }
 
+pre {
+    width: 70%;
+    min-width: 400px;
+    background: #777676;
+    padding: 10px;
+    border-radius: 5px;
+}
+
 nav {
     /*background: #777676;*/
     color: white;
@@ -18,6 +26,17 @@ nav {
     padding: 10px;
     border-right: 2px solid #777676;
     margin-top: 5px;
+}
+
+nav div {
+    list-style: none;
+    border-style: none;
+
+}
+nav li {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
 }
 
 nav a {
@@ -35,6 +54,17 @@ header {
 
 article {
     padding-left: 200px;
+}
+
+header ul {
+    margin-left: 15px;
+}
+article ul {
+    margin-left: 15px;
+}
+
+footer ul {
+    margin-left: 15px;
 }
 
 footer {
