@@ -22,7 +22,7 @@ nav {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 150px;
+    width: 200px;
     padding: 10px;
     border-right: 2px solid #777676;
     margin-top: 5px;
@@ -49,11 +49,11 @@ nav a:hover {
 }
 
 header {
-    padding-left: 200px;
+    padding-left: 250px;
 }
 
 article {
-    padding-left: 200px;
+    padding-left: 250px;
 }
 
 header ul {
@@ -68,7 +68,7 @@ footer ul {
 }
 
 footer {
-    padding-left: 200px;
+    padding-left: 250px;
 }
 
 /*.level3::before {*/
@@ -128,17 +128,17 @@ li a {
 
 @media screen and (max-width: 800px) {
     nav {
-        width: 0;
+       display: none;
     }
     header {
-        padding-left: 0px;
+        padding-left: 5px;
     }
 
     article {
-        padding-left: 0px;
+        padding-left: 5px;
     }
 
     footer {
-        padding-left: 0px;
+        padding-left: 5px;
     }
 }

@@ -1,3 +1,5 @@
+
+## 用法
 ### 使用
 
 首先参考`demo/`目录，使用`markdown`编写一些章节文件（位于`demo/section/`），并使用`HTML`编写好页面模板文件（位于`demo/index.tpl`）。在模板文件中，使用`x-markdown`标签引用`.md`文件，并使用`x-index`标签指定索引输出位置。

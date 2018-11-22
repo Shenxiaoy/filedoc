@@ -1,13 +1,13 @@
-###
 
-## 安装
+## 结构
 
 >	npm install filedoc -g
 
-### 搜想的
+### nav.js
 
-水电费是否是方式
+### styles.css
+ - left
+ - right
+ - top
 
-### 胜多负少
-sdfsdfsf
-- 士大夫身份
+### qianblue.svg
